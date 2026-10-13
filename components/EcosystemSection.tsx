@@ -2,8 +2,20 @@ import Image from 'next/image';
 import { S26_SITE, WATCH_SITE } from '@/lib/links';
 
 const SITES = [
-  { href: S26_SITE, img: '/ecosystem/s26-ultra.webp', name: 'Galaxy S26 Ultra', text: 'Where Hi-Fi, Super Clear Call and 360 Audio come together.' },
-  { href: WATCH_SITE, img: '/ecosystem/watch-ultra2.webp', name: 'Galaxy Watch Ultra2', text: 'Control your Buds and music from your wrist.' },
+  {
+    href: S26_SITE,
+    img: '/ecosystem/s26-product.webp',
+    name: 'Galaxy S26 Ultra',
+    text: 'Where Hi-Fi, Super Clear Call and 360 Audio come together.',
+    glow: 'radial-gradient(60% 65% at 50% 55%, rgba(125, 211, 252, 0.2), rgba(167, 139, 250, 0.08) 55%, transparent 75%)',
+  },
+  {
+    href: WATCH_SITE,
+    img: '/ecosystem/watch-ultra2-product.webp',
+    name: 'Galaxy Watch Ultra2',
+    text: 'Control your Buds and music from your wrist.',
+    glow: 'radial-gradient(55% 60% at 50% 55%, rgba(164, 185, 140, 0.24), transparent 72%)',
+  },
 ];
 
 const PERKS = [
@@ -27,20 +39,22 @@ export default function EcosystemSection() {
               href={s.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative block overflow-hidden rounded-[28px] border border-white/10 aspect-[8/5]"
+              className="group relative flex flex-col overflow-hidden rounded-[28px] border border-white/10 bg-[#0b0b0d] transition-colors duration-300 hover:border-white/25"
             >
-              <Image
-                src={s.img}
-                alt={`${s.name} concept site`}
-                width={960}
-                height={600}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-              />
-              <div className="absolute inset-x-0 bottom-0 p-5 lg:p-7 bg-gradient-to-t from-black/90 to-transparent flex items-end justify-between gap-4">
+              <div className="relative aspect-[16/10]" style={{ background: s.glow }}>
+                <Image
+                  src={s.img}
+                  alt={s.name}
+                  fill
+                  sizes="(min-width: 768px) 45vw, 90vw"
+                  className="object-contain p-6 lg:p-10 transition-transform duration-700 group-hover:scale-[1.04]"
+                />
+              </div>
+              <div className="flex items-end justify-between gap-4 px-5 pb-5 lg:px-7 lg:pb-7">
                 <div>
                   <p className="sg-eyebrow !text-[0.6rem] mb-1">Concept</p>
                   <p className="text-xl lg:text-2xl font-semibold">{s.name}</p>
-                  <p className="text-sm text-white/60 font-light mt-1 max-lg:hidden">{s.text}</p>
+                  <p className="text-sm text-white/60 font-light mt-1">{s.text}</p>
                 </div>
                 <span className="sg-btn !py-2.5 !px-5 text-sm shrink-0">
                   Explore
