@@ -374,3 +374,10 @@ a.rounded-full:focus-visible { border-radius: 999px; }
   from { height: 6px; }
   to { height: 26px; }
 }
+
+.cmp-reveal {
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cmp-reveal:not([data-shown]) { opacity: 0; transform: translateY(16px); }
+}

@@ -19,6 +19,8 @@ An interactive, scroll-driven product page for the Samsung Galaxy Buds4 Pro, bui
 - **Battery and IP57:** rings that fill as you scroll, plus an animated rain field.
 - **Colors + AR:** switch between White, Black and Pink Gold, spin the case, then place it on your desk at real size (51 × 51 × 28.3 mm) in AR.
 - **Drag to spin** in the hero and in the color picker, with inertia and a soft snap back.
+- **Buds4 Pro vs Buds3 Pro:** headline gains and a side-by-side spec table that reveals row by row.
+- **Section dots:** a side navigator that shows where you are and jumps to any section.
 - **Watch the film:** one button runs the whole page as an auto-scrolling tour you can pause or exit.
 - **Galaxy ecosystem:** links to its sister project, the [Galaxy S26 Ultra concept site](https://s27-ultra-concept.vercel.app).
 
@@ -36,8 +38,10 @@ An interactive, scroll-driven product page for the Samsung Galaxy Buds4 Pro, bui
 | **Pinch controls:** try the gestures | **Super Clear Call:** noise removed |
 | ![Battery](docs/screenshots/desktop-battery.jpg) | ![Wireless charging](docs/screenshots/desktop-charging.jpg) |
 | **Battery:** 6 h, 26 h with the case | **Wireless charging:** the case lands on a pad |
-| ![IP57](docs/screenshots/desktop-water.jpg) | ![Ecosystem](docs/screenshots/desktop-ecosystem.jpg) |
-| **IP57** earbuds | **Galaxy ecosystem:** better with S26 Ultra |
+| ![IP57](docs/screenshots/desktop-water.jpg) | ![Compare](docs/screenshots/desktop-compare.jpg) |
+| **IP57** earbuds | **Compare:** Buds4 Pro vs Buds3 Pro |
+| ![Ecosystem](docs/screenshots/desktop-ecosystem.jpg) | |
+| **Galaxy ecosystem:** better with S26 Ultra | |
 | ![Colors](docs/screenshots/desktop-colors.jpg) | ![AR](docs/screenshots/desktop-ar.jpg) |
 | **Colors:** White, Black and Pink Gold | **AR:** place it on your desk |
 

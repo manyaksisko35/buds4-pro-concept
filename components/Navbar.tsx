@@ -9,6 +9,7 @@ const LINKS = [
   { id: 'anc', label: 'ANC' },
   { id: 'calls', label: 'Calls' },
   { id: 'battery', label: 'Battery' },
+  { id: 'compare', label: 'Compare' },
   { id: 'specs', label: 'Specs' },
 ];
 

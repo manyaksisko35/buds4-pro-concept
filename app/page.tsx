@@ -4,6 +4,8 @@ import Scene from '@/components/Scene';
 import HeroGlow from '@/components/HeroGlow';
 import Navbar from '@/components/Navbar';
 import ScrollProgress from '@/components/ScrollProgress';
+import SectionDots from '@/components/SectionDots';
+import CompareSection from '@/components/CompareSection';
 import HeadlineReveal from '@/components/HeadlineReveal';
 import AmbientPause from '@/components/AmbientPause';
 import FilmTour from '@/components/FilmTour';
@@ -32,6 +34,7 @@ export default function Home() {
       </a>
       <Navbar />
       <ScrollProgress />
+      <SectionDots />
       <HeadlineReveal />
       <AmbientPause />
       <FilmTour />
@@ -56,6 +59,7 @@ export default function Home() {
       <ChargingSection />
       <WaterSection />
       <ColorsSection />
+      <CompareSection />
       <EcosystemSection />
       <Specs />
     </>

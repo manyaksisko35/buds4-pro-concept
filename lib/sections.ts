@@ -2,12 +2,12 @@
 
 import { useEffect, useState } from 'react';
 
-export type Section = { id: string; label: string };
+export type Section = { id: string; label: string; offset?: number };
 
 export const SECTIONS: Section[] = [
   { id: 'overview', label: 'Overview' },
   { id: 'open', label: 'The case' },
-  { id: 'design', label: 'Design' },
+  { id: 'design', label: 'Design', offset: 0.9 },
   { id: 'sound', label: 'Sound' },
   { id: 'anc', label: 'Noise control' },
   { id: 'spatial', label: '360 Audio' },
@@ -18,6 +18,7 @@ export const SECTIONS: Section[] = [
   { id: 'charging', label: 'Wireless charging' },
   { id: 'water', label: 'IP57' },
   { id: 'colors', label: 'Colors' },
+  { id: 'compare', label: 'vs Buds3 Pro' },
   { id: 'ecosystem', label: 'Galaxy ecosystem' },
   { id: 'specs', label: 'Specs' },
 ];
