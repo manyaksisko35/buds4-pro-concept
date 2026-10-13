@@ -57,9 +57,10 @@ function ChargingCase() {
     const p = progress.p;
     const land = smooth(p / 0.32);
     const f = frame.current;
-    const restY = -0.42 + 0.04 + (rig.height * f.s) / 2;
+    const restY = -0.42 + 0.042 + (rig.height * f.s) / 2;
     f.y = THREE.MathUtils.lerp(1.9, restY, land);
     f.ry = -0.9 + land * 0.55;
+    f.rx = 0.32 * (1 - land);
     f.led = smooth((p - 0.3) / 0.1) * (0.6 + 0.4 * Math.sin(p * 60));
     poseRig(rig, f);
     const sh = shadow.current;

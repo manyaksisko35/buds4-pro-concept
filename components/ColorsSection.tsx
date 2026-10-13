@@ -17,7 +17,7 @@ function Product({ color }: { color: string }) {
   const turn = useRef(0);
   const reduce = useRef(prefersReducedMotion());
 
-  const frame = useRef({ x: 0, y: -0.12, s: 1.25, rx: 0.42, ry: -0.5, lid: 1.95, lift: 0, spread: 0, bx: 0, by: 0, led: 2 });
+  const frame = useRef({ x: 0, y: -0.38, s: 1.0, rx: 0.42, ry: -0.5, lid: 1.95, lift: 0, spread: 0, bx: 0, by: 0, led: 2 });
 
   useEffect(() => {
     applyBudsColor(rig, color);
@@ -37,7 +37,7 @@ function Product({ color }: { color: string }) {
   return (
     <>
       <primitive object={rig.root} />
-      <SoftShadow y={-0.62} width={1.9} depth={1.2} opacity={0.55} />
+      <SoftShadow y={-0.68} width={1.6} depth={1.05} opacity={0.55} />
     </>
   );
 }
