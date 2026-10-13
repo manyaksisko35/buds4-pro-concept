@@ -12,7 +12,8 @@ export type BudsColor = { id: string; name: string; swatch: string };
 
 export const BUDS_COLORS: BudsColor[] = [
   { id: 'white', name: 'White', swatch: '#eceef0' },
-  { id: 'black', name: 'Black', swatch: '#2a2b2e' },
+  { id: 'black', name: 'Black', swatch: '#3a3c41' },
+  { id: 'pink-gold', name: 'Pink Gold', swatch: '#efd3c8' },
 ];
 
 export type BudsRig = {
@@ -28,14 +29,19 @@ export type BudsRig = {
 
 const PALETTE: Record<string, Record<string, { color: number; metalness: number; roughness: number }>> = {
   white: {
-    Case: { color: 0xe8eaec, metalness: 0, roughness: 0.42 },
-    'Case.002': { color: 0x8d9096, metalness: 0.85, roughness: 0.28 },
-    'Case.001': { color: 0x9a9da2, metalness: 0.1, roughness: 0.35 },
+    Case: { color: 0xeceef0, metalness: 0, roughness: 0.4 },
+    'Case.002': { color: 0xc3c6cb, metalness: 0.88, roughness: 0.3 },
+    'Case.001': { color: 0xa5a8ad, metalness: 0.1, roughness: 0.35 },
   },
   black: {
-    Case: { color: 0x1d1e21, metalness: 0.05, roughness: 0.45 },
-    'Case.002': { color: 0x3a3c40, metalness: 0.9, roughness: 0.3 },
-    'Case.001': { color: 0x2a2b2e, metalness: 0.1, roughness: 0.4 },
+    Case: { color: 0x2c2e33, metalness: 0.05, roughness: 0.42 },
+    'Case.002': { color: 0x8a8d93, metalness: 0.9, roughness: 0.3 },
+    'Case.001': { color: 0x4a4c51, metalness: 0.1, roughness: 0.4 },
+  },
+  'pink-gold': {
+    Case: { color: 0xecc3b4, metalness: 0, roughness: 0.4 },
+    'Case.002': { color: 0xd3a08f, metalness: 0.88, roughness: 0.3 },
+    'Case.001': { color: 0xc9a59a, metalness: 0.1, roughness: 0.35 },
   },
 };
 

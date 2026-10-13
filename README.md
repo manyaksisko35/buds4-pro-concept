@@ -17,7 +17,7 @@ An interactive, scroll-driven product page for the Samsung Galaxy Buds4 Pro, bui
 - **Hi-Fi slider:** drag between a stepped low-resolution waveform and a smooth 24-bit / 96 kHz one.
 - **Super Clear Call:** a live voice waveform that shows the background noise drop away when you toggle the feature.
 - **Battery and IP57:** rings that fill as you scroll, plus an animated rain field.
-- **Colors + AR:** switch between White and Black, spin the case, then place it on your desk at real size (51 × 51 × 28.3 mm) in AR.
+- **Colors + AR:** switch between White, Black and Pink Gold, spin the case, then place it on your desk at real size (51 × 51 × 28.3 mm) in AR.
 - **Drag to spin** in the hero and in the color picker, with inertia and a soft snap back.
 - **Watch the film:** one button runs the whole page as an auto-scrolling tour you can pause or exit.
 - **Galaxy ecosystem:** links to its sister project, the [Galaxy S26 Ultra concept site](https://s27-ultra-concept.vercel.app).
@@ -39,7 +39,7 @@ An interactive, scroll-driven product page for the Samsung Galaxy Buds4 Pro, bui
 | ![IP57](docs/screenshots/desktop-water.jpg) | ![Ecosystem](docs/screenshots/desktop-ecosystem.jpg) |
 | **IP57** earbuds | **Galaxy ecosystem:** better with S26 Ultra |
 | ![Colors](docs/screenshots/desktop-colors.jpg) | ![AR](docs/screenshots/desktop-ar.jpg) |
-| **Colors:** White and Black | **AR:** place it on your desk |
+| **Colors:** White, Black and Pink Gold | **AR:** place it on your desk |
 
 ### Mobile
 
@@ -77,7 +77,7 @@ Open [http://localhost:3000](http://localhost:3000). AR needs HTTPS on a real ph
 ## Credits
 
 - Specifications: Samsung's Galaxy Buds4 series announcement and product pages.
-- 3D model: ["SUMSUNG Buds 4 Pro"](https://sketchfab.com/3d-models/sumsung-buds-4-pro-67456ae938ac40d8999b27266a59189d) on Sketchfab, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Modified: earbuds separated, lid rigged, materials adjusted, compressed. The modified model files in `public/model` are shared under the same license.
+- 3D model: ["SUMSUNG Buds 4 Pro"](https://sketchfab.com/3d-models/sumsung-buds-4-pro-67456ae938ac40d8999b27266a59189d) by [zhe_kan](https://sketchfab.com/zhe_kan) on Sketchfab, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Modified: earbuds separated, lid rigged, materials adjusted, compressed. The modified model files in `public/model` are shared under the same license.
 - [&lt;model-viewer&gt;](https://github.com/google/model-viewer) by Google, Apache-2.0.
 - Font: [Outfit](https://fonts.google.com/specimen/Outfit) (SIL Open Font License).
 

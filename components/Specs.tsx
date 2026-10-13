@@ -40,7 +40,11 @@ export default function Specs() {
               rel="noopener noreferrer"
               className="underline hover:text-white"
             >
-              &quot;SUMSUNG Buds 4 Pro&quot; on Sketchfab
+              &quot;SUMSUNG Buds 4 Pro&quot;
+            </a>{' '}
+            by{' '}
+            <a href="https://sketchfab.com/zhe_kan" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">
+              zhe_kan
             </a>
             , licensed under{' '}
             <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">

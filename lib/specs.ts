@@ -32,7 +32,7 @@ export const SPECS: { group: string; rows: [string, string][] }[] = [
       ['Water resistance', 'IP57 (earbuds only)'],
       ['Weight', '5.1 g per earbud'],
       ['Connectivity', 'Bluetooth 6.1'],
-      ['Colors', 'White, Black'],
+      ['Colors', 'White, Black, Pink Gold'],
     ],
   },
 ];
