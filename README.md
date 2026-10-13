@@ -22,7 +22,7 @@ An interactive, scroll-driven product page for the Samsung Galaxy Buds4 Pro, bui
 - **Buds4 Pro vs Buds3 Pro:** headline gains and a side-by-side spec table that reveals row by row.
 - **Section dots:** a side navigator that shows where you are and jumps to any section.
 - **Watch the film:** one button runs the whole page as an auto-scrolling tour you can pause or exit.
-- **Galaxy ecosystem:** links to its sister project, the [Galaxy S26 Ultra concept site](https://s27-ultra-concept.vercel.app).
+- **Galaxy ecosystem:** links to its sister projects, the [Galaxy S26 Ultra](https://s27-ultra-concept.vercel.app) and [Galaxy Watch Ultra2](https://watch-ultra-concept.vercel.app) concept sites.
 
 ## Screenshots
 
