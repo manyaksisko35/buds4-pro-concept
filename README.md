@@ -11,11 +11,16 @@ An interactive, scroll-driven product page for the Samsung Galaxy Buds4 Pro, bui
 - **Scroll-driven 3D story:** a single real-time model carries the page. The clamshell lid swings open on a real hinge, the earbuds rise out of the cradle, the case drops away and the buds turn to face you.
 - **Interactive hotspots:** labels pinned to points on the 3D earbud (metal blade, pinch control, canal fit) that follow it as it moves.
 - **Hear the ANC:** switch between Off, Ambient and Adaptive ANC while a city soundscape and music play. All of it is synthesized live with the Web Audio API, no audio files.
+- **360 Audio you can hear:** a melody positioned around your head with HRTF spatial audio. Drag the sound around you, and turn your head with the pointer or, on a phone, with the gyroscope. With head tracking on, the sound stays put in the room.
+- **Pinch controls:** pinch, double pinch, triple pinch, hold or swipe on the engraved spot of the blade, and a "now playing" card reacts.
+- **Wireless charging:** the closed case lands on a charging pad as you scroll, the pad lights up and the charge fills.
 - **Hi-Fi slider:** drag between a stepped low-resolution waveform and a smooth 24-bit / 96 kHz one.
 - **Super Clear Call:** a live voice waveform that shows the background noise drop away when you toggle the feature.
 - **Battery and IP57:** rings that fill as you scroll, plus an animated rain field.
 - **Colors + AR:** switch between White and Black, spin the case, then place it on your desk at real size (51 × 51 × 28.3 mm) in AR.
 - **Drag to spin** in the hero and in the color picker, with inertia and a soft snap back.
+- **Watch the film:** one button runs the whole page as an auto-scrolling tour you can pause or exit.
+- **Galaxy ecosystem:** links to its sister project, the [Galaxy S26 Ultra concept site](https://s27-ultra-concept.vercel.app).
 
 ## Screenshots
 
@@ -25,10 +30,14 @@ An interactive, scroll-driven product page for the Samsung Galaxy Buds4 Pro, bui
 | **The case opens** as you scroll | **Design hotspots** pinned to the 3D earbud |
 | ![Sound](docs/screenshots/desktop-sound.jpg) | ![ANC](docs/screenshots/desktop-anc.jpg) |
 | **Two drivers:** 11 mm woofer + 5.5 mm tweeter | **Adaptive ANC:** see and hear it |
-| ![Hi-Fi](docs/screenshots/desktop-hifi.jpg) | ![Calls](docs/screenshots/desktop-calls.jpg) |
-| **24-bit / 96 kHz:** drag to compare | **Super Clear Call:** noise removed |
-| ![Battery](docs/screenshots/desktop-battery.jpg) | ![IP57](docs/screenshots/desktop-water.jpg) |
-| **Battery:** 6 h, 26 h with the case | **IP57** earbuds |
+| ![360 Audio](docs/screenshots/desktop-spatial.jpg) | ![Hi-Fi](docs/screenshots/desktop-hifi.jpg) |
+| **360 Audio:** drag the sound, turn your head | **24-bit / 96 kHz:** drag to compare |
+| ![Pinch controls](docs/screenshots/desktop-controls.jpg) | ![Calls](docs/screenshots/desktop-calls.jpg) |
+| **Pinch controls:** try the gestures | **Super Clear Call:** noise removed |
+| ![Battery](docs/screenshots/desktop-battery.jpg) | ![Wireless charging](docs/screenshots/desktop-charging.jpg) |
+| **Battery:** 6 h, 26 h with the case | **Wireless charging:** the case lands on a pad |
+| ![IP57](docs/screenshots/desktop-water.jpg) | ![Ecosystem](docs/screenshots/desktop-ecosystem.jpg) |
+| **IP57** earbuds | **Galaxy ecosystem:** better with S26 Ultra |
 | ![Colors](docs/screenshots/desktop-colors.jpg) | ![AR](docs/screenshots/desktop-ar.jpg) |
 | **Colors:** White and Black | **AR:** place it on your desk |
 
@@ -53,7 +62,7 @@ An interactive, scroll-driven product page for the Samsung Galaxy Buds4 Pro, bui
 - [Next.js 16](https://nextjs.org), React 19, TypeScript, [Tailwind CSS v4](https://tailwindcss.com)
 - [three.js](https://threejs.org), [@react-three/fiber](https://github.com/pmndrs/react-three-fiber), [@react-three/drei](https://github.com/pmndrs/drei)
 - [GSAP ScrollTrigger](https://gsap.com/scrolltrigger), [Lenis](https://lenis.darkroom.engineering)
-- Web Audio API, Canvas 2D
+- Web Audio API (synthesis, HRTF spatial audio), Device Orientation API, Canvas 2D
 - [&lt;model-viewer&gt;](https://modelviewer.dev) for AR
 
 ## Getting started

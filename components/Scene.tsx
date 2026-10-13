@@ -35,7 +35,7 @@ type Pose = {
 const OPEN_LID = 1.95;
 
 const DESKTOP: Record<'hero' | 'open' | 'lift' | 'design' | 'sound', Pose> = {
-  hero: { x: 0, y: -0.42, s: 1.5, rx: 0.5, ry: -0.55, lid: 0, lift: 0, spread: 0, bx: 0, by: 0, led: 0.3, hot: 0 },
+  hero: { x: 0, y: -0.56, s: 1.25, rx: 0.5, ry: -0.55, lid: 0, lift: 0, spread: 0, bx: 0, by: 0, led: 0.3, hot: 0 },
   open: { x: 0.85, y: -0.5, s: 1.4, rx: 0.62, ry: -0.3, lid: OPEN_LID, lift: 0, spread: 0, bx: 0, by: 0, led: 2.4, hot: 0 },
   lift: { x: 0.85, y: -0.75, s: 1.4, rx: 0.42, ry: -0.18, lid: OPEN_LID, lift: 2.1, spread: 0.5, bx: 0.8, by: 0.2, led: 2.4, hot: 0 },
   design: { x: 0.38, y: -2.6, s: 1.9, rx: 0.08, ry: 0, lid: 0, lift: 6.8, spread: 1.15, bx: 1.57, by: 0.4, led: 0, hot: 1 },
@@ -43,7 +43,7 @@ const DESKTOP: Record<'hero' | 'open' | 'lift' | 'design' | 'sound', Pose> = {
 };
 
 const MOBILE: typeof DESKTOP = {
-  hero: { x: 0, y: -0.38, s: 0.95, rx: 0.5, ry: -0.55, lid: 0, lift: 0, spread: 0, bx: 0, by: 0, led: 0.3, hot: 0 },
+  hero: { x: 0, y: -0.6, s: 0.9, rx: 0.5, ry: -0.55, lid: 0, lift: 0, spread: 0, bx: 0, by: 0, led: 0.3, hot: 0 },
   open: { x: 0, y: -0.95, s: 0.8, rx: 0.62, ry: -0.3, lid: OPEN_LID, lift: 0, spread: 0, bx: 0, by: 0, led: 2.4, hot: 0 },
   lift: { x: 0, y: -1.05, s: 0.8, rx: 0.42, ry: -0.18, lid: OPEN_LID, lift: 2.1, spread: 0.5, bx: 0.8, by: 0.2, led: 2.4, hot: 0 },
   design: { x: -0.05, y: -1.95, s: 1.0, rx: 0.08, ry: 0, lid: 0, lift: 8.8, spread: 0.75, bx: 1.57, by: 0.4, led: 0, hot: 1 },

@@ -318,3 +318,59 @@ a.rounded-full:focus-visible { border-radius: 999px; }
   10% { opacity: 0.7; }
   to { transform: translateY(110vh); opacity: 0; }
 }
+
+.spatial-pulse {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .spatial-pulse { animation: spatial-pulse 1.6s ease-out infinite; }
+}
+@keyframes spatial-pulse {
+  from { transform: scale(0.6); opacity: 0.9; }
+  to { transform: scale(1.8); opacity: 0; }
+}
+
+.pinch-zone {
+  background: radial-gradient(closest-side, rgba(94, 234, 212, 0.35), rgba(94, 234, 212, 0) 75%);
+  cursor: pointer;
+}
+.pinch-zone::after {
+  content: '';
+  position: absolute;
+  inset: 22%;
+  border-radius: 999px;
+  border: 1px solid rgba(94, 234, 212, 0.8);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .pinch-zone::after { animation: pinch-hint 2.2s ease-in-out infinite; }
+}
+@keyframes pinch-hint {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+.pinch-ring {
+  position: absolute;
+  inset: 10%;
+  border-radius: 999px;
+  border: 2px solid #5eead4;
+  opacity: 0;
+  animation: pinch-ring 0.32s ease-out var(--n, 0);
+}
+@keyframes pinch-ring {
+  from { transform: scale(0.6); opacity: 1; }
+  to { transform: scale(1.5); opacity: 0; }
+}
+
+.eq { display: flex; align-items: flex-end; gap: 4px; height: 26px; }
+.eq i { width: 5px; height: 6px; border-radius: 3px; background: rgba(255, 255, 255, 0.9); }
+@media (prefers-reduced-motion: no-preference) {
+  .eq--on i { animation: eq 0.9s ease-in-out infinite alternate; }
+  .eq--on i:nth-child(2) { animation-delay: 0.2s; }
+  .eq--on i:nth-child(3) { animation-delay: 0.45s; }
+  .eq--on i:nth-child(4) { animation-delay: 0.1s; }
+}
+@keyframes eq {
+  from { height: 6px; }
+  to { height: 26px; }
+}
